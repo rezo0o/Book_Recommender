@@ -9,13 +9,22 @@ kaggle.json
 secrets.toml
 
 # Python
-__pycache__/
+**pycache**/
 *.py[cod]
 *$py.class
 *.so
 .Python
 env/
 .env
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints*
 
 # VS Code
 .vscode/
