@@ -1,0 +1,21 @@
+# Data files
+data/
+*.csv
+
+# Credentials and secrets
+.kaggle/
+kaggle.json
+.streamlit/
+secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+.env
+
+# VS Code
+.vscode/
