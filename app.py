@@ -44,6 +44,10 @@ def download_kaggle_dataset():
         
         if not files_exist:
             with st.spinner('Downloading dataset from Kaggle...'):
+                # Get credentials from Streamlit secrets
+                os.environ['KAGGLE_USERNAME'] = st.secrets['kaggle']['username']
+                os.environ['KAGGLE_KEY'] = st.secrets['kaggle']['key']
+                
                 api = KaggleApi()
                 api.authenticate()
                 api.dataset_download_files(
